@@ -1,0 +1,9 @@
+<h1> Welcome to the RocketCoin! </h1>
+
+{% for coin in coins %}
+<div>
+    <a href = "/{{ coin.Coin_name }}"> {{coin.Coin_name}} </a>
+    <p> {{coin.Symbol}} </p>
+    <p> {{coin.Forked_from}} </p>
+</div>
+{% endfor %}
